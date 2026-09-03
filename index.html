@@ -24,6 +24,7 @@
 <h2>What the app reads</h2>
 <ul>
   <li><strong>Step count.</strong> The app reads the step counter sensor built into your phone. This requires the Android permission <em>Physical activity</em> (ACTIVITY_RECOGNITION). Steps are the only sensor data the app uses. If you decline the permission, the app still works, but the voyage does not advance.</li>
+  <li><strong>Health Connect (optional).</strong> Under <em>You › Step counting › Read from Health Connect</em> you can choose to take your daily step count and walked distance from Health Connect instead of the phone's sensor, for example when a watch or another fitness app records them. The app then asks Health Connect for read access to <em>Steps</em> and <em>Distance</em>, and optionally for background access so it can refresh while closed. It reads daily totals for the last 30 days, writes nothing to Health Connect, and shares nothing it reads. You can withdraw the access at any time in Health Connect or by switching the option off.</li>
   <li><strong>Height.</strong> You enter your height so steps can be converted into kilometres. You can change it at any time.</li>
 </ul>
 
@@ -34,7 +35,7 @@
 <p><strong>Nothing.</strong> The app has no server, no user account, no analytics, no advertising, and no third-party tracking SDK. Your steps and distances are never uploaded or shared with anyone, including us.</p>
 
 <h2>Background step counting</h2>
-<p>If you allow it, the app keeps counting steps while it is closed and shows a persistent notification with today's distance. This is on by default and can be switched off under <em>You › Step counting › Count while the app is closed</em>. Counting stays on the device either way.</p>
+<p>Once you grant the step permission, the app keeps counting steps while it is closed and shows a persistent notification with today's distance. This is how the app works; there is no separate switch for it. When Health Connect is the source, the app does not listen to the sensor and instead reads the daily totals when it opens and about every fifteen minutes. Counting stays on the device either way.</p>
 
 <h2>Purchases</h2>
 <p>The Voyager upgrade is a one-time purchase handled entirely by Google Play. Google processes the payment and holds the purchase record under its own <a href="https://policies.google.com/privacy">privacy policy</a>. The app only learns whether the purchase exists; it never sees your payment details.</p>
@@ -68,6 +69,7 @@
 <h2>Was die App liest</h2>
 <ul>
   <li><strong>Schrittzahl.</strong> Die App liest den im Telefon eingebauten Schrittzähler-Sensor. Dafür braucht sie die Android-Berechtigung <em>Körperliche Aktivität</em> (ACTIVITY_RECOGNITION). Schritte sind die einzigen Sensordaten, die die App verwendet. Lehnst du die Berechtigung ab, funktioniert die App weiter, die Reise schreitet dann aber nicht voran.</li>
+  <li><strong>Health Connect (optional).</strong> Unter <em>Du › Schrittzählung › Aus Health Connect lesen</em> kannst du deine tägliche Schrittzahl und gegangene Strecke statt vom Sensor des Telefons aus Health Connect beziehen, etwa wenn eine Uhr oder eine andere Fitness-App sie aufzeichnet. Die App bittet Health Connect dann um Lesezugriff auf <em>Schritte</em> und <em>Distanz</em> sowie optional um Hintergrundzugriff, damit sie auch geschlossen aktualisieren kann. Sie liest Tagessummen der letzten 30 Tage, schreibt nichts in Health Connect und gibt nichts davon weiter. Du kannst den Zugriff jederzeit in Health Connect entziehen oder die Option abschalten.</li>
   <li><strong>Körpergröße.</strong> Du gibst deine Größe an, damit Schritte in Kilometer umgerechnet werden können. Du kannst sie jederzeit ändern.</li>
 </ul>
 
@@ -78,7 +80,7 @@
 <p><strong>Nichts.</strong> Die App hat keinen Server, kein Nutzerkonto, keine Analyse-Dienste, keine Werbung und kein Tracking-SDK von Dritten. Deine Schritte und Strecken werden nie hochgeladen oder mit jemandem geteilt, auch nicht mit uns.</p>
 
 <h2>Schrittzählung im Hintergrund</h2>
-<p>Wenn du es erlaubst, zählt die App weiter, während sie geschlossen ist, und zeigt eine dauerhafte Benachrichtigung mit der heutigen Strecke. Das ist standardmäßig an und lässt sich unter <em>Du › Schrittzählung › Zählen, während die App geschlossen ist</em> abschalten. Die Zählung bleibt in beiden Fällen auf dem Gerät.</p>
+<p>Sobald du die Schrittzähler-Berechtigung erteilt hast, zählt die App weiter, während sie geschlossen ist, und zeigt eine dauerhafte Benachrichtigung mit der heutigen Strecke. So funktioniert die App; einen eigenen Schalter dafür gibt es nicht. Ist Health Connect die Quelle, hört die App nicht auf den Sensor, sondern liest die Tagessummen beim Öffnen und etwa alle fünfzehn Minuten. Die Zählung bleibt in beiden Fällen auf dem Gerät.</p>
 
 <h2>Käufe</h2>
 <p>Die Voyager-Erweiterung ist ein Einmalkauf, den vollständig Google Play abwickelt. Google verarbeitet die Zahlung und verwahrt den Kaufbeleg nach seiner eigenen <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung</a>. Die App erfährt nur, ob der Kauf existiert; Zahlungsdaten sieht sie nie.</p>
