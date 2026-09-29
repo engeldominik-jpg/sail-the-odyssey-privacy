@@ -17,14 +17,14 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="sub">Sail the Odyssey (Android) · Effective 2 September 2026 · <a href="#de">Deutsche Fassung unten</a></p>
+<p class="sub">Sail the Odyssey (Android) · Effective 29 September 2026 · <a href="#de">Deutsche Fassung unten</a></p>
 
-<p>Sail the Odyssey is a walking app. It turns the steps you take into a voyage from Troy to Ithaca. This policy explains what data the app touches and what happens to it. The short version: everything stays on your phone.</p>
+<p>Sail the Odyssey is a walking app. It turns the steps you take into a voyage from Troy to Ithaca. This policy explains what data the app touches and what happens to it. The short version: everything stays on your phone unless you deliberately join a fleet, and even then only a name you choose and how far you have sailed.</p>
 
 <h2>What the app reads</h2>
 <ul>
   <li><strong>Step count.</strong> The app reads the step counter sensor built into your phone. This requires the Android permission <em>Physical activity</em> (ACTIVITY_RECOGNITION). Steps are the only sensor data the app uses. If you decline the permission, the app still works, but the voyage does not advance.</li>
-  <li><strong>Health Connect (optional).</strong> Under <em>You › Step counting › Read from Health Connect</em> you can choose to take your daily step count and walked distance from Health Connect instead of the phone's sensor, for example when a watch or another fitness app records them. The app then asks Health Connect for read access to <em>Steps</em> and <em>Distance</em>, and optionally for background access so it can refresh while closed. It reads daily totals for the last 30 days, writes nothing to Health Connect, and shares nothing it reads. You can withdraw the access at any time in Health Connect or by switching the option off.</li>
+  <li><strong>Health Connect (optional).</strong> Under <em>You › Step counting › Read from Health Connect</em> you can choose to take your daily step count from Health Connect instead of the phone's sensor, for example when a watch or another fitness app records it. The app then asks Health Connect for read access to <em>Steps</em> only, and optionally for background access so it can refresh while closed. It reads daily totals for the last 30 days, writes nothing to Health Connect, and shares nothing it reads. You can withdraw the access at any time in Health Connect or by switching the option off.</li>
   <li><strong>Height.</strong> You enter your height so steps can be converted into kilometres. You can change it at any time.</li>
 </ul>
 
@@ -32,7 +32,22 @@
 <p>The app stores, on your device only: your daily step counts, the kilometres credited from them, the chapters you have opened and read, your settings (height, theme, notification and sound preferences), and whether you own the Voyager upgrade.</p>
 
 <h2>What leaves your phone</h2>
-<p><strong>Nothing.</strong> The app has no server, no user account, no analytics, no advertising, and no third-party tracking SDK. Your steps and distances are never uploaded or shared with anyone, including us.</p>
+<p><strong>Nothing, unless you join a fleet or use Play Games saved games.</strong> The app has no analytics, no advertising, and no third-party tracking SDK. Your step counts, your daily records and your reading are never uploaded to us, and there is no account of any kind until you choose to sail in company. The two exceptions are described below.</p>
+
+<h2>The fleet (optional)</h2>
+<p>The fleet is an opt-in part of the Voyager upgrade that lets people who know each other see one another's progress. It is off until you open <em>You &rsaquo; Ships in company</em>, choose a name, and scan somebody's code. If you never do, nothing in this section applies to you and nothing leaves your phone.</p>
+<ul>
+  <li><strong>What is stored.</strong> An anonymous account identifier created for your device, the display name you type, and how far you have sailed in kilometres. With them, the server keeps whether your Voyager purchase was confirmed and when it was last checked, and when the record was created; and, separately, a record linking your Google Play purchase to that anonymous account, so one purchase cannot unlock many accounts. The purchase receipt is stored only as a one-way hash, and if Google Play reports a refund, the server notes the refund against that hash. Nothing else: not your step counts, not your daily records, not which chapters you have read, and not your location. The app never asks for and never has access to location data.</li>
+  <li><strong>Who can see it.</strong> Only people you have added by scanning a code, and only for as long as they are in your fleet. They see your record as it is stored: your name, your distance, when you last reported it, whether your purchase is confirmed and when it was checked, and when you joined. They never see the purchase record. There is no directory, no search, and no way for a stranger to look you up: the database is configured so that a person's record can only be read by someone they are already sailing with.</li>
+  <li><strong>Scanning a code.</strong> The camera view that reads a code is the Google code scanner in Google Play services. It reads the code on the phone and hands the app only the text in it; the app never receives a picture and does not ask for the camera permission.</li>
+  <li><strong>The codes.</strong> An invite code is single-use and expires ten minutes after it is shown. It is not readable by any device other than the server that issued it, so a photograph of one taken later is worthless.</li>
+  <li><strong>Who processes it.</strong> Google Firebase (Authentication, Cloud Firestore and Cloud Functions), acting as our processor, on servers in the European Union (the database in Google's <em>eur3</em> multi-region, Belgium and the Netherlands; the functions in Frankfurt). Google's handling of that data is covered by its <a href="https://firebase.google.com/support/privacy">Firebase privacy documentation</a>. To confirm that a request really comes from a genuine copy of the app, Firebase App Check uses the Google Play Integrity API; this attests the app, not you.</li>
+  <li><strong>Your name is public to your fleet.</strong> Choose one you are happy for everyone you add to see. You can change it at any time.</li>
+  <li><strong>Deleting it.</strong> <em>You &rsaquo; Ships in company &rsaquo; Leave the fleet entirely</em> deletes your name, your distance and every connection to you, immediately and for good. Removing a single person removes both sides of that connection. Nothing is kept for analysis, and no backup of the fleet data is retained beyond Google's own short operational backups.</li>
+</ul>
+
+<h2>Play Games saved games</h2>
+<p>The app can keep a copy of your voyage in Google Play Games, so that a new phone or a reinstall can pick it up again. This only happens while you are signed in to Google Play Games on your phone, which Play Games does by itself if you use it; the copy then contains what the app stores on your device (daily step counts, kilometres, chapters read, settings) and is held by Google in your own Google account under its <a href="https://policies.google.com/privacy">privacy policy</a>. We cannot read it. You can delete it in the Google Play Games app under its settings. In the current version of the app this feature is switched off and nothing is saved.</p>
 
 <h2>Background step counting</h2>
 <p>Once you grant the step permission, the app keeps counting steps while it is closed and shows a persistent notification with today's distance. This is how the app works; there is no separate switch for it. When Health Connect is the source, the app does not listen to the sensor and instead reads the daily totals when it opens and about every fifteen minutes. Counting stays on the device either way.</p>
@@ -50,7 +65,7 @@
 <p><em>You › Start again › Reset the voyage</em> erases every step, kilometre and chapter. Uninstalling the app removes all of its data from the device.</p>
 
 <h2>Children</h2>
-<p>The app is not directed at children under 13 and collects no personal data from anyone.</p>
+<p>The app is not directed at children under 13. Unless you join a fleet, it collects no personal data from anyone; if you do, the only personal data involved is a display name you choose yourself.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the new version is published at this address with a new effective date.</p>
@@ -61,15 +76,15 @@
 <hr>
 
 <h1 id="de" lang="de">Datenschutzerklärung</h1>
-<p class="sub" lang="de">Sail the Odyssey (Android) · Stand 2. September 2026</p>
+<p class="sub" lang="de">Sail the Odyssey (Android) · Stand 29. September 2026</p>
 
 <div lang="de">
-<p>Sail the Odyssey ist eine Schrittzähler-App. Sie verwandelt deine Schritte in eine Reise von Troja nach Ithaka. Diese Erklärung beschreibt, welche Daten die App berührt und was damit geschieht. Kurz gesagt: Alles bleibt auf deinem Telefon.</p>
+<p>Sail the Odyssey ist eine Schrittzähler-App. Sie verwandelt deine Schritte in eine Reise von Troja nach Ithaka. Diese Erklärung beschreibt, welche Daten die App berührt und was damit geschieht. Kurz gesagt: Alles bleibt auf deinem Telefon, es sei denn, du trittst bewusst einer Flotte bei &ndash; und selbst dann nur ein selbst gewählter Name und die zurückgelegte Strecke.</p>
 
 <h2>Was die App liest</h2>
 <ul>
   <li><strong>Schrittzahl.</strong> Die App liest den im Telefon eingebauten Schrittzähler-Sensor. Dafür braucht sie die Android-Berechtigung <em>Körperliche Aktivität</em> (ACTIVITY_RECOGNITION). Schritte sind die einzigen Sensordaten, die die App verwendet. Lehnst du die Berechtigung ab, funktioniert die App weiter, die Reise schreitet dann aber nicht voran.</li>
-  <li><strong>Health Connect (optional).</strong> Unter <em>Du › Schrittzählung › Aus Health Connect lesen</em> kannst du deine tägliche Schrittzahl und gegangene Strecke statt vom Sensor des Telefons aus Health Connect beziehen, etwa wenn eine Uhr oder eine andere Fitness-App sie aufzeichnet. Die App bittet Health Connect dann um Lesezugriff auf <em>Schritte</em> und <em>Distanz</em> sowie optional um Hintergrundzugriff, damit sie auch geschlossen aktualisieren kann. Sie liest Tagessummen der letzten 30 Tage, schreibt nichts in Health Connect und gibt nichts davon weiter. Du kannst den Zugriff jederzeit in Health Connect entziehen oder die Option abschalten.</li>
+  <li><strong>Health Connect (optional).</strong> Unter <em>Du › Schrittzählung › Aus Health Connect lesen</em> kannst du deine tägliche Schrittzahl statt vom Sensor des Telefons aus Health Connect beziehen, etwa wenn eine Uhr oder eine andere Fitness-App sie aufzeichnet. Die App bittet Health Connect dann nur um Lesezugriff auf <em>Schritte</em> sowie optional um Hintergrundzugriff, damit sie auch geschlossen aktualisieren kann. Sie liest Tagessummen der letzten 30 Tage, schreibt nichts in Health Connect und gibt nichts davon weiter. Du kannst den Zugriff jederzeit in Health Connect entziehen oder die Option abschalten.</li>
   <li><strong>Körpergröße.</strong> Du gibst deine Größe an, damit Schritte in Kilometer umgerechnet werden können. Du kannst sie jederzeit ändern.</li>
 </ul>
 
@@ -77,7 +92,22 @@
 <p>Die App speichert ausschließlich auf deinem Gerät: deine täglichen Schrittzahlen, die daraus gutgeschriebenen Kilometer, die geöffneten und gelesenen Kapitel, deine Einstellungen (Größe, Design, Benachrichtigungs- und Toneinstellungen) und ob du die Voyager-Erweiterung besitzt.</p>
 
 <h2>Was dein Telefon verlässt</h2>
-<p><strong>Nichts.</strong> Die App hat keinen Server, kein Nutzerkonto, keine Analyse-Dienste, keine Werbung und kein Tracking-SDK von Dritten. Deine Schritte und Strecken werden nie hochgeladen oder mit jemandem geteilt, auch nicht mit uns.</p>
+<p><strong>Nichts, solange du keiner Flotte beitrittst und keine Play-Games-Spielstände nutzt.</strong> Die App hat keine Analyse-Dienste, keine Werbung und kein Tracking-SDK von Dritten. Deine Schrittzahlen, deine Tagesaufzeichnungen und dein Leseverlauf werden nie zu uns hochgeladen, und es gibt überhaupt kein Konto, bis du dich entscheidest, in Gesellschaft zu segeln. Die beiden Ausnahmen sind unten beschrieben.</p>
+
+<h2>Die Flotte (optional)</h2>
+<p>Die Flotte ist ein freiwilliger Teil der Voyager-Erweiterung, mit dem Leute, die einander kennen, ihren Fortschritt gegenseitig sehen können. Sie ist aus, bis du <em>Du &rsaquo; Schiffe in Begleitung</em> öffnest, einen Namen wählst und den Code einer anderen Person scannst. Tust du das nie, gilt dieser Abschnitt nicht für dich und es verlässt nichts dein Telefon.</p>
+<ul>
+  <li><strong>Was gespeichert wird.</strong> Eine anonyme, für dein Gerät erzeugte Kennung, der von dir eingegebene Anzeigename und deine gesegelte Strecke in Kilometern. Dazu vermerkt der Server, ob dein Voyager-Kauf bestätigt ist und wann er zuletzt geprüft wurde, und wann der Eintrag angelegt wurde; außerdem, getrennt davon, einen Eintrag, der deinen Google-Play-Kauf mit diesem anonymen Konto verbindet, damit ein Kauf nicht viele Konten freischaltet. Der Kaufbeleg wird dabei nur als Einweg-Hash gespeichert, und meldet Google Play eine Erstattung, vermerkt der Server sie unter diesem Hash. Sonst nichts: keine Schrittzahlen, keine Tagesaufzeichnungen, keine gelesenen Kapitel und kein Standort. Die App fragt niemals nach Standortdaten und hat auch keinen Zugriff darauf.</li>
+  <li><strong>Wer es sehen kann.</strong> Nur Personen, die du durch Scannen eines Codes hinzugefügt hast, und nur solange sie in deiner Flotte sind. Sie sehen deinen Eintrag so, wie er gespeichert ist: deinen Namen, deine Strecke, wann du sie zuletzt gemeldet hast, ob dein Kauf bestätigt ist und wann er geprüft wurde, und seit wann du dabei bist. Den Kaufeintrag sehen sie nie. Es gibt kein Verzeichnis, keine Suche und keine Möglichkeit für Fremde, dich zu finden: Die Datenbank ist so eingerichtet, dass der Eintrag einer Person nur von jemandem gelesen werden kann, der bereits mit ihr segelt.</li>
+  <li><strong>Einen Code scannen.</strong> Die Kameraansicht, die einen Code liest, ist der Google-Codescanner aus den Google Play-Diensten. Er liest den Code auf dem Telefon und gibt der App nur den Text darin; die App erhält nie ein Bild und fragt nicht nach der Kameraberechtigung.</li>
+  <li><strong>Die Codes.</strong> Ein Einladungscode gilt für genau einen Scan und läuft zehn Minuten nach dem Anzeigen ab. Kein anderes Gerät als der ausstellende Server kann ihn lesen; ein später aufgenommenes Foto davon ist wertlos.</li>
+  <li><strong>Wer es verarbeitet.</strong> Google Firebase (Authentication, Cloud Firestore und Cloud Functions) als unser Auftragsverarbeiter, auf Servern in der Europäischen Union (die Datenbank in Googles Multiregion <em>eur3</em>, Belgien und Niederlande; die Funktionen in Frankfurt). Für Googles Umgang mit diesen Daten gilt die <a href="https://firebase.google.com/support/privacy">Firebase-Datenschutzdokumentation</a>. Um zu bestätigen, dass eine Anfrage wirklich von einer echten Kopie der App stammt, nutzt Firebase App Check die Google Play Integrity API; geprüft wird dabei die App, nicht du.</li>
+  <li><strong>Dein Name ist für deine Flotte sichtbar.</strong> Wähle einen, den alle sehen dürfen, die du hinzufügst. Du kannst ihn jederzeit ändern.</li>
+  <li><strong>Löschen.</strong> <em>Du &rsaquo; Schiffe in Begleitung &rsaquo; Die Flotte ganz verlassen</em> löscht deinen Namen, deine Strecke und jede Verbindung zu dir &ndash; sofort und endgültig. Entfernst du eine einzelne Person, wird die Verbindung auf beiden Seiten gelöst. Nichts wird zu Auswertungszwecken aufbewahrt, und über Googles eigene kurze Betriebssicherungen hinaus wird keine Sicherung der Flottendaten vorgehalten.</li>
+</ul>
+
+<h2>Play-Games-Spielstände</h2>
+<p>Die App kann eine Kopie deiner Reise in Google Play Games ablegen, damit ein neues Telefon oder eine Neuinstallation sie wieder aufnehmen kann. Das geschieht nur, solange du auf deinem Telefon bei Google Play Games angemeldet bist, was Play Games von selbst tut, wenn du es nutzt; die Kopie enthält dann, was die App auf deinem Gerät speichert (tägliche Schrittzahlen, Kilometer, gelesene Kapitel, Einstellungen), und wird von Google in deinem eigenen Google-Konto nach seiner <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung</a> verwahrt. Wir können sie nicht lesen. Löschen kannst du sie in der Google-Play-Games-App in deren Einstellungen. In der aktuellen Version der App ist diese Funktion abgeschaltet, und es wird nichts gespeichert.</p>
 
 <h2>Schrittzählung im Hintergrund</h2>
 <p>Sobald du die Schrittzähler-Berechtigung erteilt hast, zählt die App weiter, während sie geschlossen ist, und zeigt eine dauerhafte Benachrichtigung mit der heutigen Strecke. So funktioniert die App; einen eigenen Schalter dafür gibt es nicht. Ist Health Connect die Quelle, hört die App nicht auf den Sensor, sondern liest die Tagessummen beim Öffnen und etwa alle fünfzehn Minuten. Die Zählung bleibt in beiden Fällen auf dem Gerät.</p>
@@ -95,7 +125,7 @@
 <p><em>Du › Neu beginnen › Die Reise zurücksetzen</em> löscht alle Schritte, Kilometer und Kapitel. Das Deinstallieren der App entfernt alle ihre Daten vom Gerät.</p>
 
 <h2>Kinder</h2>
-<p>Die App richtet sich nicht an Kinder unter 13 Jahren und erhebt von niemandem personenbezogene Daten.</p>
+<p>Die App richtet sich nicht an Kinder unter 13 Jahren. Solange du keiner Flotte beitrittst, erhebt sie von niemandem personenbezogene Daten; trittst du bei, sind die einzigen personenbezogenen Daten ein von dir selbst gewählter Anzeigename.</p>
 
 <h2>Änderungen</h2>
 <p>Ändert sich diese Erklärung, wird die neue Fassung mit neuem Datum unter dieser Adresse veröffentlicht.</p>
