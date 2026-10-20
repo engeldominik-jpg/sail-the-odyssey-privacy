@@ -17,7 +17,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="sub">Sail the Odyssey (Android) · Effective 30 September 2026 · <a href="#de">Deutsche Fassung unten</a></p>
+<p class="sub">Sail the Odyssey (Android) · Effective 15 October 2026 · <a href="#de">Deutsche Fassung unten</a></p>
 
 <p>Sail the Odyssey is a walking app. It turns the steps you take into a voyage from Troy to Ithaca. This policy explains what data the app touches and what happens to it. The short version: everything stays on your phone unless you deliberately join a fleet, and even then only a name you choose and how far you have sailed.</p>
 
@@ -33,7 +33,7 @@
 
 <h2>What leaves your phone</h2>
 <p><strong>Nothing, unless you join a fleet or use Play Games saved games.</strong> The app has no analytics, no advertising, and no third-party tracking SDK. Your step counts, your daily records and your reading are never uploaded to us, and there is no account of any kind until you choose to sail in company. The two exceptions are described below.</p>
-<p>One thing is sent without you doing anything, and not to us: the code scanner the fleet uses is part of Google's ML Kit, and when the app starts, ML Kit sends Google technical usage and diagnostic information about the library itself, such as its version, the app's name and version, the device model and Android version, and whether its operations succeeded. It contains no steps, no voyage data and nothing you type. Google uses it to maintain and improve ML Kit; we never receive it.</p>
+<p>One thing is sent by a Google library rather than by us, and only when you use the fleet's code scanner: the scanner is part of Google's ML Kit, and when you open it, ML Kit sends Google technical usage and diagnostic information about the library itself, such as its version, the app's name and version, the device model and Android version, and whether its operations succeeded. It contains no steps, no voyage data and nothing you type. Google uses it to maintain and improve ML Kit; we never receive it. Until October 2026 the library did this at every start of the app; it no longer runs until a scan is started.</p>
 
 <h2>The fleet (optional)</h2>
 <p>The fleet is an opt-in part of the Voyager upgrade that lets people who know each other see one another's progress. It is off until you open <em>You &rsaquo; Ships in company</em>, choose a name, and scan somebody's code. If you never do, nothing in this section applies to you and nothing leaves your phone.</p>
@@ -41,7 +41,7 @@
   <li><strong>What is stored.</strong> An anonymous account identifier created for your device, the display name you type, how far you have sailed in kilometers, and the colour of your sail. With them, the server keeps whether your Voyager purchase was confirmed and when it was last checked, and when the record was created; and, separately, a record linking your Google Play purchase to that anonymous account, so one purchase cannot unlock many accounts. The purchase receipt is stored only as a one-way hash, and if Google Play reports a refund, the server notes the refund against that hash. Nothing else: not your step counts, not your daily records, not which chapters you have read, and not your location. The app never asks for and never has access to location data.</li>
   <li><strong>Who can see it.</strong> Only people you have added by scanning a code, and only for as long as they are in your fleet. They see your record as it is stored: your name, your distance, the colour of your sail, when you last reported it, whether your purchase is confirmed and when it was checked, and when you joined. They never see the purchase record. There is no directory, no search, and no way for a stranger to look you up: the database is configured so that a person's record can only be read by someone they are already sailing with.</li>
   <li><strong>Scanning a code.</strong> The camera view that reads a code is the Google code scanner in Google Play services. It reads the code on the phone and hands the app only the text in it; the app never receives a picture and does not ask for the camera permission.</li>
-  <li><strong>The codes.</strong> An invite code is single-use and expires ten minutes after it is shown. It is not readable by any device other than the server that issued it, so a photograph of one taken later is worthless.</li>
+  <li><strong>The codes.</strong> An invite code is single-use and expires ten minutes after it is shown. It is not readable by any device other than the server that issued it, so a photograph of one taken later is worthless. A code can also be sent as a link through any app you choose; the link carries only the code, and neither we nor the app learn whom you sent it to.</li>
   <li><strong>Who processes it.</strong> Google Firebase (Authentication, Cloud Firestore and Cloud Functions), acting as our processor, on servers in the European Union (the database in Google's <em>eur3</em> multi-region, Belgium and the Netherlands; the functions in Frankfurt). Google's handling of that data is covered by its <a href="https://firebase.google.com/support/privacy">Firebase privacy documentation</a>. To confirm that a request really comes from a genuine copy of the app, Firebase App Check uses the Google Play Integrity API; this attests the app, not you.</li>
   <li><strong>Your name is public to your fleet.</strong> Choose one you are happy for everyone you add to see. You can change it at any time.</li>
   <li><strong>Deleting it.</strong> <em>You &rsaquo; Ships in company &rsaquo; Leave the fleet entirely</em> deletes your name, your distance, your sail and every connection to you, immediately and for good. Removing a single person removes both sides of that connection. Nothing is kept for analysis, and no backup of the fleet data is retained beyond Google's own short operational backups.</li>
@@ -55,6 +55,7 @@
 
 <h2>Purchases</h2>
 <p>The Voyager upgrade is a one-time purchase handled entirely by Google Play. Google processes the payment and holds the purchase record under its own <a href="https://policies.google.com/privacy">privacy policy</a>. The app only learns whether the purchase exists; it never sees your payment details.</p>
+<p>Once, after your first landfall, the app may ask Google Play to show its rating sheet. Whether you rate, and what Google Play does with a rating, is between you and Google Play; the app is not told.</p>
 
 <h2>Notifications</h2>
 <p>The app can show local notifications: the step-counting notification, a note when a new chapter opens, and an optional evening log. These are generated on the device. No push service is used.</p>
@@ -85,7 +86,7 @@
 <hr>
 
 <h1 id="de" lang="de">Datenschutzerklärung</h1>
-<p class="sub" lang="de">Sail the Odyssey (Android) · Stand 30. September 2026</p>
+<p class="sub" lang="de">Sail the Odyssey (Android) · Stand 15. Oktober 2026</p>
 
 <div lang="de">
 <p>Sail the Odyssey ist eine Schrittzähler-App. Sie verwandelt deine Schritte in eine Reise von Troja nach Ithaka. Diese Erklärung beschreibt, welche Daten die App berührt und was damit geschieht. Kurz gesagt: Alles bleibt auf deinem Telefon, es sei denn, du trittst bewusst einer Flotte bei &ndash; und selbst dann nur ein selbst gewählter Name und die zurückgelegte Strecke.</p>
@@ -102,7 +103,7 @@
 
 <h2>Was dein Telefon verlässt</h2>
 <p><strong>Nichts, solange du keiner Flotte beitrittst und keine Play-Games-Spielstände nutzt.</strong> Die App hat keine Analyse-Dienste, keine Werbung und kein Tracking-SDK von Dritten. Deine Schrittzahlen, deine Tagesaufzeichnungen und dein Leseverlauf werden nie zu uns hochgeladen, und es gibt überhaupt kein Konto, bis du dich entscheidest, in Gesellschaft zu segeln. Die beiden Ausnahmen sind unten beschrieben.</p>
-<p>Eines wird ohne dein Zutun gesendet, und nicht an uns: Der Codescanner, den die Flotte nutzt, gehört zu Googles ML Kit, und beim Start der App sendet ML Kit technische Nutzungs- und Diagnosedaten über die Bibliothek selbst an Google, etwa ihre Version, Name und Version der App, das Gerätemodell und die Android-Version und ob ihre Vorgänge gelungen sind. Darin sind keine Schritte, keine Reisedaten und nichts, was du eingibst. Google nutzt sie, um ML Kit zu pflegen und zu verbessern; wir erhalten sie nie.</p>
+<p>Eines wird von einer Google-Bibliothek gesendet, nicht von uns, und nur wenn du den Codescanner der Flotte benutzt: Der Scanner gehört zu Googles ML Kit, und wenn du ihn öffnest, sendet ML Kit technische Nutzungs- und Diagnosedaten über die Bibliothek selbst an Google, etwa ihre Version, Name und Version der App, das Gerätemodell und die Android-Version und ob ihre Vorgänge gelungen sind. Darin sind keine Schritte, keine Reisedaten und nichts, was du eingibst. Google nutzt sie, um ML Kit zu pflegen und zu verbessern; wir erhalten sie nie. Bis Oktober 2026 tat die Bibliothek das bei jedem Start der App; jetzt läuft sie erst, wenn ein Scan gestartet wird.</p>
 
 <h2>Die Flotte (optional)</h2>
 <p>Die Flotte ist ein freiwilliger Teil der Voyager-Erweiterung, mit dem Leute, die einander kennen, ihren Fortschritt gegenseitig sehen können. Sie ist aus, bis du <em>Du &rsaquo; Schiffe in Begleitung</em> öffnest, einen Namen wählst und den Code einer anderen Person scannst. Tust du das nie, gilt dieser Abschnitt nicht für dich und es verlässt nichts dein Telefon.</p>
@@ -110,7 +111,7 @@
   <li><strong>Was gespeichert wird.</strong> Eine anonyme, für dein Gerät erzeugte Kennung, der von dir eingegebene Anzeigename, deine gesegelte Strecke in Kilometern und die Farbe deines Segels. Dazu vermerkt der Server, ob dein Voyager-Kauf bestätigt ist und wann er zuletzt geprüft wurde, und wann der Eintrag angelegt wurde; außerdem, getrennt davon, einen Eintrag, der deinen Google-Play-Kauf mit diesem anonymen Konto verbindet, damit ein Kauf nicht viele Konten freischaltet. Der Kaufbeleg wird dabei nur als Einweg-Hash gespeichert, und meldet Google Play eine Erstattung, vermerkt der Server sie unter diesem Hash. Sonst nichts: keine Schrittzahlen, keine Tagesaufzeichnungen, keine gelesenen Kapitel und kein Standort. Die App fragt niemals nach Standortdaten und hat auch keinen Zugriff darauf.</li>
   <li><strong>Wer es sehen kann.</strong> Nur Personen, die du durch Scannen eines Codes hinzugefügt hast, und nur solange sie in deiner Flotte sind. Sie sehen deinen Eintrag so, wie er gespeichert ist: deinen Namen, deine Strecke, die Farbe deines Segels, wann du sie zuletzt gemeldet hast, ob dein Kauf bestätigt ist und wann er geprüft wurde, und seit wann du dabei bist. Den Kaufeintrag sehen sie nie. Es gibt kein Verzeichnis, keine Suche und keine Möglichkeit für Fremde, dich zu finden: Die Datenbank ist so eingerichtet, dass der Eintrag einer Person nur von jemandem gelesen werden kann, der bereits mit ihr segelt.</li>
   <li><strong>Einen Code scannen.</strong> Die Kameraansicht, die einen Code liest, ist der Google-Codescanner aus den Google Play-Diensten. Er liest den Code auf dem Telefon und gibt der App nur den Text darin; die App erhält nie ein Bild und fragt nicht nach der Kameraberechtigung.</li>
-  <li><strong>Die Codes.</strong> Ein Einladungscode gilt für genau einen Scan und läuft zehn Minuten nach dem Anzeigen ab. Kein anderes Gerät als der ausstellende Server kann ihn lesen; ein später aufgenommenes Foto davon ist wertlos.</li>
+  <li><strong>Die Codes.</strong> Ein Einladungscode gilt für genau einen Scan und läuft zehn Minuten nach dem Anzeigen ab. Kein anderes Gerät als der ausstellende Server kann ihn lesen; ein später aufgenommenes Foto davon ist wertlos. Ein Code lässt sich auch als Link über eine App deiner Wahl verschicken; der Link enthält nur den Code, und weder wir noch die App erfahren, an wen du ihn geschickt hast.</li>
   <li><strong>Wer es verarbeitet.</strong> Google Firebase (Authentication, Cloud Firestore und Cloud Functions) als unser Auftragsverarbeiter, auf Servern in der Europäischen Union (die Datenbank in Googles Multiregion <em>eur3</em>, Belgien und Niederlande; die Funktionen in Frankfurt). Für Googles Umgang mit diesen Daten gilt die <a href="https://firebase.google.com/support/privacy">Firebase-Datenschutzdokumentation</a>. Um zu bestätigen, dass eine Anfrage wirklich von einer echten Kopie der App stammt, nutzt Firebase App Check die Google Play Integrity API; geprüft wird dabei die App, nicht du.</li>
   <li><strong>Dein Name ist für deine Flotte sichtbar.</strong> Wähle einen, den alle sehen dürfen, die du hinzufügst. Du kannst ihn jederzeit ändern.</li>
   <li><strong>Löschen.</strong> <em>Du &rsaquo; Schiffe in Begleitung &rsaquo; Die Flotte ganz verlassen</em> löscht deinen Namen, deine Strecke und jede Verbindung zu dir &ndash; sofort und endgültig. Entfernst du eine einzelne Person, wird die Verbindung auf beiden Seiten gelöst. Nichts wird zu Auswertungszwecken aufbewahrt, und über Googles eigene kurze Betriebssicherungen hinaus wird keine Sicherung der Flottendaten vorgehalten.</li>
@@ -124,6 +125,7 @@
 
 <h2>Käufe</h2>
 <p>Die Voyager-Erweiterung ist ein Einmalkauf, den vollständig Google Play abwickelt. Google verarbeitet die Zahlung und verwahrt den Kaufbeleg nach seiner eigenen <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung</a>. Die App erfährt nur, ob der Kauf existiert; Zahlungsdaten sieht sie nie.</p>
+<p>Einmal, nach deinem ersten Landgang, kann die App Google Play bitten, sein Bewertungsfenster zu zeigen. Ob du bewertest und was Google Play mit einer Bewertung macht, ist Sache zwischen dir und Google Play; die App erfährt es nicht.</p>
 
 <h2>Benachrichtigungen</h2>
 <p>Die App kann lokale Benachrichtigungen anzeigen: die Schrittzähler-Benachrichtigung, einen Hinweis bei einem neuen Kapitel und ein optionales Abendlogbuch. Sie entstehen auf dem Gerät. Es wird kein Push-Dienst verwendet.</p>
